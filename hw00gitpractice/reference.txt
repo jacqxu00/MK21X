@@ -1,0 +1,8 @@
+GIT COMMANDS
+
+clone: copy repo to local machine (first download)
+pull: update local repo with the online version (download)
+push: update online version with local repo (upload)
+add: selecting which one to commit, creates the tracker
+commit: lock in a version after there is a tracker, must add comment
+- basically means save on local computer
