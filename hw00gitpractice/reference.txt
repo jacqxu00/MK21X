@@ -8,3 +8,6 @@ add: selecting which one to commit, creates the tracker
 commit: lock in a version after there is a tracker, must add comment
 - basically means save on local computer
 - format: "git commit -m "comment""
+
+.. this is bogus ...
+how silly
