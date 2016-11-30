@@ -1,0 +1,34 @@
+public class Book {
+    private String author;
+    private String title;
+    private String ISBN;
+
+    public Book(){
+	
+    }
+
+    public Book(String a, String t, String i){
+    }
+
+    public String getAuthor(){
+    }
+
+    public void setAuthor(String a){
+    }
+
+    public String getTitle(){
+    }
+
+    public void setTitle(String t){
+    }
+
+    public String getISBN(){
+    }
+
+    public void setISBN(String i){
+    }
+
+    public String toString(){
+    }
+
+}
