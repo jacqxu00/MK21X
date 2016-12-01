@@ -33,10 +33,16 @@ public class CirculatingBook extends LibraryBook {
     }
 
     public String circulationStatus() {
-	
+	if (currentHolder != null) {
+	    return currentHolder + ", " + dueDate;
+	}
+	else {
+	    return "Book available on Shelves";
+	}
     }
 
     public String toString() {
+	return super.toString() + ", " + currentHolder + ", " + dueDate;
     }
 
 }
