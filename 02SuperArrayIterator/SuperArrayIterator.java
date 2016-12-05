@@ -10,13 +10,13 @@ public class SuperArrayIterator implements Iterator<String> {
     }
 
     public boolean hasNext(){
-	return element < superArray.size()-1;
+	return element < superArray.size();
     }
 
     public String next(){
 	if(hasNext()){
 	    element++;
-	    return superArray.get(element);
+	    return superArray.get(element-1);
 	}
 	else{
 	    throw new NoSuchElementException();

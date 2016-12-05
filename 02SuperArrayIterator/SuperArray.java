@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class SuperArray implements Iterable<String>{
     private String[] data;
     private int size;
@@ -87,8 +89,8 @@ public class SuperArray implements Iterable<String>{
 	return element;
     }
     
-    public Iterator<String> interator(){
-	return SuperArrayIterator(this, 0);
+    public Iterator<String> iterator(){
+	return new SuperArrayIterator(this, 0);
     }
 
     public String[] toArray(){
