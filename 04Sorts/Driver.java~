@@ -1,0 +1,6 @@
+public class Driver {
+    public static void main(String[] args) {
+	new ary[] name = [5,7,8,3,4,2,0,1];
+	Sorts.selectionSort(name);
+	System.out.println(name);
+}
