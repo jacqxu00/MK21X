@@ -53,7 +53,7 @@ public class Sorts{
 	if (data.length == 1) {
 	    ans += data[0] + "]";
 	}
-	if (data.length == 0) {
+	else if (data.length == 0) {
 	    ans += "]";
 	}
 	else {
