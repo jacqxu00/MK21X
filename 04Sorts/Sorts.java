@@ -67,7 +67,7 @@ public class Sorts{
     }
 	
 
-    public static String toString(int[] data){
+    public static void toString(int[] data){
 	String ans = "[ ";
 	if (data.length == 1) {
 	    ans += data[0] + "]";
@@ -83,7 +83,42 @@ public class Sorts{
 	    ans += data[data.length-1];
 	    ans += "]";
 	}
+        System.out.println(ans);
+    }
+
+    private static int[] genArray(int nums) {
+	int[] ans = new int[nums];
+	for (int i = 0; i < nums; i++) {
+	    ans[i] = (int)(Math.random() * 100000);
+	}
 	return ans;
     }
 
+    public static void main(String[] args) {
+	if (args.length != 2) {
+	    System.out.println("Please print according to following format \n 'length of array, type of sort (0: selection, 1: insertion, 2: bubble)'");
+	    return;
+	}
+	int[] arr = genArray(Integer.parseInt(args[0]));
+	if (arr.length <= 20) {
+	    toString(arr);
+	}
+	int sort = Integer.parseInt(args[1]);
+	long start = System.currentTimeMillis();
+	if(sort == 0){
+	    selectionSort(arr);
+	}
+	if(sort == 1){
+	    insertionSort(arr);
+	}
+	if(sort == 2){
+	    bubbleSort(arr);
+	}
+	long end = System.currentTimeMillis();
+	if (arr.length <= 20) {
+	    toString(arr);
+	}
+	System.out.println((end - start) / 1000.0);
+    }
+	    
 }
