@@ -14,13 +14,11 @@ public class Sorts{
 	    for (int i = 0; i < data.length - 1; i++) {
 		int smallest = data[i];
 		int smallind = i;
-		int j = i+1;
-		while (j < data.length) {
+		for (int j = i+1; j < data.length; j++) {
 		    if (data[j] < smallest) {
 			smallest = data[j];
 			smallind = j;
 		    }
-		    j++;
 		}
 	   
 		if (smallest != data[i]) {
@@ -96,7 +94,7 @@ public class Sorts{
 
     public static void main(String[] args) {
 	if (args.length != 2) {
-	    System.out.println("Please print according to following format \n 'length of array, type of sort (0: selection, 1: insertion, 2: bubble)'");
+	    System.out.println("Please print according to following format: \n'length of array, type of sort (0: selection, 1: insertion, 2: bubble)'");
 	    return;
 	}
 	int[] arr = genArray(Integer.parseInt(args[0]));
