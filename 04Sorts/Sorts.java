@@ -51,18 +51,19 @@ public class Sorts{
 
     public static void bubbleSort(int[] data) {
 	int pass = 1;
-	int swaps = 0;
-	if (swaps != 0) {
+	boolean swaps = true;
+        while (swaps) {
+	    swaps = false;
 	    for (int i = 0; i < data.length - pass; i++) {
-		if ((data[i] > data[i+1]) && swaps != 0) {
+		if (data[i] > data[i+1]) {
 		    int temp = data[i+1];
 		    data[i+1] = data[i];
 		    data[i] = temp;
+		    swaps = true;
 		}
-		swaps++;
 	    }
-	    pass++;
 	}
+	pass++;
     }
 	
 
