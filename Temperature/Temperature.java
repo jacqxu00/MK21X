@@ -17,7 +17,7 @@ public class Temperature extends JFrame implements ActionListener {
 
 	pane = this.getContentPane();
 	pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
-	JButton toc = new JButton("to Celcius");
+	JButton toc = new JButton("to Celsius");
 	toc.addActionListener(this);
 	toc.setActionCommand("toC");
 	JButton tof = new JButton("to Fahrenheit");
